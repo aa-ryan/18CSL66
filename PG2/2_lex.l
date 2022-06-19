@@ -1,11 +1,9 @@
 %{
-#include "y.tab.h"
-
+	#include "y.tab.h"
 %}
 %%
-a {return A;}
-b {return B;}
+a { return A; }
+b { return B; }
 [\n] return '\n';
-
 %%
 
