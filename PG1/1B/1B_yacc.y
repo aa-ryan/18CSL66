@@ -7,7 +7,7 @@
 %left '*' '/'
 %%
 input:exp {
-	 printf("%d\n",$$);
+	 printf("%d\n",num);
 	 exit(0);
 }
 exp:exp'+'exp { $$=$1+$3; }

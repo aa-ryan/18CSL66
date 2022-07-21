@@ -4,7 +4,8 @@
 int main()
 {
 
-	char fin[10][20],st[10][20],ft[20][20],fol[20][20]; int a=0,e,i,t,b,c,n,k,l=0,j,s,m,p; 
+	char fin[10][20],st[10][20],ft[20][20],fol[20][20]; 
+	int a=0,e,i,t,b,c,n,k,l=0,j,s,m,p; 
 	printf("enter the no. of coordinates\n");
 	scanf("%d",&n);
 

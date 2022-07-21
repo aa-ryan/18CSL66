@@ -4,7 +4,10 @@
 %}
 %token A B
 %%
-input:s'\n' {printf("Successful Grammar\n");exit(0);}
+input:s'\n' {
+	 printf("Successful Grammar\n");
+	 exit(0);
+	}
 	 s: A s1 B| B
 	 s1: ; | A s1
 %%
