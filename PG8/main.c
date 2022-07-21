@@ -34,7 +34,8 @@ int main()
 			scanf("%d", &alloc[i][j]);
 	}
 
-	printf("\n\nEnter the Available Resources : "); for(i = 0; i < r; i++)
+	printf("\n\nEnter the Available Resources : "); 
+	for(i = 0; i < r; i++)
 		scanf("%d", &avail[i]);
 
 	for(i = 0; i < p; i++)
@@ -84,7 +85,9 @@ int main()
 
 		{
 
-			printf("\nProcess %d runs to completion!", process + 1); safeSequence[count] = process + 1; count++;
+			printf("\nProcess %d runs to completion!", process + 1); 
+			safeSequence[count] = process + 1;
+			count++;
 
 			for(j = 0; j < r; j++)
 			{

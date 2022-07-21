@@ -21,7 +21,7 @@
 
 int main()
 {
-	printf("Enter the expression");
+	printf("Enter the expression: ");
 	yylex();
 	if((op+1) ==id && v==0 && flag==0)
 		printf("\n Expression is Valid\n");
