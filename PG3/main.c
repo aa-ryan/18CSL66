@@ -4,7 +4,9 @@
 int main()
 {
 
-	char fin[10][20],st[10][20],ft[20][20],fol[20][20]; int a=0,e,i,t,b,c,n,k,l=0,j,s,m,p; printf("enter the no. of coordinates\n"); scanf("%d",&n);
+	char fin[10][20],st[10][20],ft[20][20],fol[20][20]; int a=0,e,i,t,b,c,n,k,l=0,j,s,m,p; 
+	printf("enter the no. of coordinates\n");
+	scanf("%d",&n);
 
 	printf("enter the productions in a grammar\n");
 	for(i=0;i<n;i++)
@@ -117,7 +119,7 @@ k1:while((st[i][0]!=st[k][j])&&(k<n))
 					   goto q3;
 			   }
 
-q3:
+			q3:
 			   fol[i][l]=st[k][j];
 			   l++;
 		   }
