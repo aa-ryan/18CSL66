@@ -3,7 +3,6 @@
 
 void FIFO(char [ ],char [ ],int,int);
 void lru(char [ ],char [ ],int,int);
-void opt(char [ ],char [ ],int,int);
 
 int main()
 {
@@ -27,19 +26,17 @@ int main()
 
         switch(ch)
         {
-            case 1: for(i=0;i<f;i++)
-                        F[i]=-1;
+            case 1: 
                     FIFO(s,F,l,f);
                     break;
 
-            case 2: for(i=0;i<f;i++)
-                        F[i]=-1;
+            case 2:
                     lru(s,F,l,f);
                     break;
 
             case 3: exit(0);
         }
-        printf("\n\nDo u want to continue IF YES PRESS 1\nIF NO PRESS 0 : ");
+        printf("\n\nDo u want to continue IF YES PRESS 1\tIF NO PRESS 0 : ");
         scanf("%d",&YN);
     } while(YN==1);
     return(0);
